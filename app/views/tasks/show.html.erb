@@ -1,0 +1,13 @@
+<h1><%= @task.title%></h1>
+<br>
+<p>DONE:
+<% if @task.status%>
+  yes
+  <%else%>
+  no
+  <%end%>
+</p>
+<p><%= @task.description %></p>
+
+<%= link_to 'Back', tasks_path%>
+
